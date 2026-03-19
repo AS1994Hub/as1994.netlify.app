@@ -1,0 +1,72 @@
+/* Fonts */
+@import url(../fonts/handjet.css);
+
+/* Global CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "handjet";
+  color: #fff;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: #111;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100svh;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wlc-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  gap: 0px;
+}
+
+.wlc-card h1 {
+  font-size: 3rem;
+  & span {
+    font-weight: bold;
+  }
+  .left {
+    color: #1f75fe;
+  }
+  .mid {
+    color: #ffc108;
+  }
+  .right {
+    color: #fb005e;
+  }
+}
+
+.wlc-card p {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-style: italic;
+}
