@@ -43,5 +43,78 @@
 - تحت العنوان إستخدم Unordered List لوضع خمس أقسام بأي اسماء تريد
 
 ```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic Elements</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>My Portfolio</h1>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About Me</a>
+          <a href="#">Projects</a>
+          <a href="#">Articles</a>
+          <a href="#">Contact/Hire Me</a>
+        </nav>
+      </header>
+      <aside>
+        <h2>Categories</h2>
+        <ul>
+          <li>About Me</li>
+          <li>Projects</li>
+          <li>Articles</li>
+        </ul>
+      </aside>
+      <section>
+        <h2>Articles</h2>
+        <hr />
+        <article>
+          <h3>Lorem ipsum</h3>
+          <p>dolor sit, amet consectetur adipisicing elit...</p>
+          <a href="#">Read More!</a>
+          <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Article Image" />
+          <hr />
+        </article>
+        <article>
+          <h3>Lorem ipsum</h3>
+          <p>dolor sit, amet consectetur adipisicing elit...</p>
+          <a href="#">Read More!</a>
+          <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Article Image" />
+          <hr />
+        </article>
+        <article>
+          <h3>Lorem ipsum</h3>
+          <p>dolor sit, amet consectetur adipisicing elit...</p>
+          <a href="#">Read More!</a>
+          <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Article Image" />
+          <hr />
+        </article>
+      </section>
+      <footer>
+        <p>Copyright 2021 &copy;</p>
+      </footer>
+    </main>
+  </body>
+</html>
+```
+
+### التكليف 03 / التكليف 04
+
+- قم بإضافة عنصر يحتوي على ملف صوتي بأكثر من إمتداد 3 Extensions
+- قم بإضافة عنصر يحتوي على ملف فيديو بأكثر من إمتداد 3 Extensions
+- ضع رسالة تظهر في حالة كان المتصفح لا يدعم الملف الصوتي
+- ضع رسالة تظهر في حالة كان المتصفح لا يدعم الملف المرئي
+- تأكد ان الملف يعمل تلقائيا عند فتح الصفحة
+- تأكد أن الملف إذا إنتهي سوف يعمل تلقائيا مرة أخرى
+- تأكد أن الفيديو لا يوجد به صوت عندما يعمل
+- ضع في ال Caption لغتين يمكن الشخص أن يختارهم
+- ضع Poster للفيديو باي صورة تريدها يظهر عند التحميل
+
+```html
 
 ```
