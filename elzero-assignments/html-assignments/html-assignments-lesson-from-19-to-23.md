@@ -12,14 +12,14 @@
   Nav -> HTML
   Main -> HTML
   Aside -> HTML
-  Picture -> not HTML
+  Picture -> HTML
   Figure -> HTML
   Footer ->  HTML
   FigCaption -> HTML
   Section -> HTML
   Command -> not HTML
   Ruby -> HTML (not use much)
-  Data -> not HTML
+  Data -> HTML
   Article -> HTML
   Install -> not HTML
   Text -> not HTML
@@ -51,17 +51,17 @@
     <title>Semantic Elements</title>
   </head>
   <body>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Projects</a>
+        <a href="#">Articles</a>
+        <a href="#">Contact/Hire Me</a>
+      </nav>
+    </header>
     <main>
-      <header>
-        <h1>My Portfolio</h1>
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">About Me</a>
-          <a href="#">Projects</a>
-          <a href="#">Articles</a>
-          <a href="#">Contact/Hire Me</a>
-        </nav>
-      </header>
       <aside>
         <h2>Categories</h2>
         <ul>
@@ -95,10 +95,10 @@
           <hr />
         </article>
       </section>
-      <footer>
-        <p>Copyright 2021 &copy;</p>
-      </footer>
     </main>
+    <footer>
+      <p>Copyright 2021 &copy;</p>
+    </footer>
   </body>
 </html>
 ```
@@ -116,5 +116,21 @@
 - ضع Poster للفيديو باي صورة تريدها يظهر عند التحميل
 
 ```html
+<!-- audio -->
+<audio controls autoplay loop>
+  <source src="audio-file.mp3" type="audio/mpeg" />
+  <source src="audio-file.ogg" type="audio/ogg" />
+  <source src="audio-file.wav" type="audio/wav" />
+  عذراً، متصفحك لا يدعم تشغيل ملفات الصوت. يمكنك تحميل الملف بدلاً من ذلك.
+</audio>
 
+<!-- video -->
+<video width="640" height="360" autoplay loop muted poster="https://via.placeholder.com/640x360.png?text=Loading+Video..." controls>
+  <source src="movie.mp4" type="video/mp4" />
+  <source src="movie.webm" type="video/webm" />
+  <source src="movie.ogv" type="video/ogg" />
+  <track src="captions_ar.vtt" kind="captions" srclang="ar" label="العربية" default />
+  <track src="captions_en.vtt" kind="captions" srclang="en" label="English" />
+  عذراً، متصفحك لا يدعم تشغيل ملفات الفيديو. يمكنك تحميل الفيديو لمشاهدته.
+</video>
 ```
